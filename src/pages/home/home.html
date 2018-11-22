@@ -1,0 +1,34 @@
+<ion-header text-center>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+     <ion-slides autoplay="2000" pager>
+      <ion-slide>
+        <img src="./assets/images/sdg1.png" />
+      </ion-slide>
+      <ion-slide>
+          <img src="./assets/images/sdg2.jpg" />
+        </ion-slide>
+        <ion-slide>
+            <img src="./assets/images/sdg3.jpg" />
+          </ion-slide>
+          <ion-slide>
+              <img src="./assets/images/sdg4.jpg" />
+              </ion-slide>  </ion-slides>
+
+
+            <button ion-button (click)="onGoToLogin()">login </button>
+            <button ion-button (click)="onGoToRegister()">Register</button>
+
+
+
+
+
+</ion-content>
