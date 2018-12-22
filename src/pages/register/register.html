@@ -15,47 +15,46 @@
 
 <ion-content padding text-center>
 	<ion-img width="80" height="80" src="./assets/images/sdg1.jpg"></ion-img>
-  <ion-list>
+  <ion-list no-line>
+
+    <ion-item>
+      <ion-input type="text" placeholder="UserName " name="UserName" #UserName></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="FullName " name="Name" #Name></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Position " name="Position" #Position></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="District " name="District" #District></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Division " name="Division" #Division></ion-input>
+    </ion-item>
+
+      <ion-item>
+      <ion-input type="email"  placeholder="Email" name="Email" #Email></ion-input>
+    </ion-item>
+
+      <ion-item>
+      <ion-input type="number" placeholder="Contact Number" name="ContactNumber" #ContactNumber></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password" name="password" #password></ion-input>
+    </ion-item>
 
 
-	<ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input type="text"   #username></ion-input>
-  </ion-item>
-
-
-  <ion-item>
-    <ion-label floating>Mobile Number</ion-label>
-    <ion-input type="text" #username></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Email</ion-label>
-    <ion-input type="text" #username></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password" #password></ion-input>
-  </ion-item>
-
-   <ion-item>
-    <ion-label floating>Confirm Password</ion-label>
-    <ion-input type="password" #password></ion-input>
-  </ion-item>
-
-
-</ion-list>
+  </ion-list>
 
   <div padding>
 
-     <button ion-button (click)="onGoToRegister()">Register</button>
-
+  <button ion-button  round outline block (click)="Register()">Register</button>
 
   </div>
-   <button ion-button (click)="takephoto()">Take photo</button>
-
-  <p align="center"><img src="{{myphoto}}"></p>
-
-
 </ion-content>
